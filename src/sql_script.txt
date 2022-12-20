@@ -14,14 +14,16 @@ CREATE TABLE employee (
   joindate DATE,
   phone VARCHAR(45) UNIQUE);
 
-#to read table data
-select * from employee;
 
 
 #to insert data into table
 insert into employee values(1, 'nawaz', 'kadapa', '12000', '2022-12-20', '+91 8099819967');
 insert into employee(id, name, salary, joindate) values(2, 'shukur', '15000', '2022-12-20');
 insert into employee(id, name, salary, joindate) values(3, 'imram', '18000', '2022-12-20');
+
+
+#to read table data
+select * from employee;
 
 
 #to update data into table
