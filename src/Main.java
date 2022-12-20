@@ -1,11 +1,4 @@
 import java.sql.*;
-
-//before writing this program
-//make sure you have a database setup in your local and
-// add the mysql connector library into the project
-// steps to add
-// 1. download connector jar file
-// 2. add jar file to the project. In intellij, open file -> project structure -> libraries -> add using + icon -> apply)
 public class Main {
 
     public static void main(String[] args) {
