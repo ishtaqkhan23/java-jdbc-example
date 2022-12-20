@@ -1,0 +1,37 @@
+
+#to drop schema
+drop schema mycompany;
+
+#to create schema
+create schema mycompany;
+
+#to create table in sql
+CREATE TABLE employee (
+  id INT PRIMARY KEY,
+  name VARCHAR(45),
+  city VARCHAR(45),
+  salary INT NOT NULL,
+  joindate DATE,
+  phone VARCHAR(45) UNIQUE);
+
+#to read table data
+select * from employee;
+
+
+#to insert data into table
+insert into employee values(1, 'nawaz', 'kadapa', '12000', '2022-12-20', '+91 8099819967');
+insert into employee(id, name, salary, joindate) values(2, 'shukur', '15000', '2022-12-20');
+insert into employee(id, name, salary, joindate) values(3, 'imram', '18000', '2022-12-20');
+
+
+#to update data into table
+update employee set phone = '+91 8099' where name = 'shukur';
+
+#to delete data from table
+delete from employee where id = 1;
+
+#to remove the  complete data from table
+TRUNCATE employee;
+
+#to remove table completely
+drop table employee
